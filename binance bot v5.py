@@ -65,6 +65,8 @@ def get_klines(coin, interval, date_range):
 
 ##############################################################################
 
+# This is an 'error alert/print' function
+
 def err(*args):
     print('THERE WAS A SYSTEM ERROR:')
     output = ''
@@ -77,6 +79,8 @@ def err(*args):
 
 ##############################################################################
 
+# This is just an optimized print function
+
 def io(*args):
     output = ''
     for arg in args:
@@ -86,6 +90,8 @@ def io(*args):
     print(output)
 
 ##############################################################################
+
+# This is a percent change utility function
 
 def getPercentChange(from_a, to_b):
     if from_a == 0 or to_b == 0:
@@ -112,6 +118,8 @@ def sfx(sound_type):
         winsound.PlaySound('sfx/error sound.wav', winsound.SND_FILENAME)
 
 ##############################################################################
+
+# This is the plotting function
 
 fig = go.Figure()
 
